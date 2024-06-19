@@ -1,3 +1,20 @@
-.main{
-    
+@use '../mixins/pseudo.scss' as *;
+
+.main {
+  &::after,
+  &::before {
+    @include pseudo(510px, 1018px) {
+      left: -322px;
+      top: -509px;
+      background-image: var(--gradient);
+      border-radius: 15.9375rem;
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    left: 157px;
+    top: 1455px;
+    opacity: 0.03;
+  }
 }
