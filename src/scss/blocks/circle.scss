@@ -1,0 +1,24 @@
+@use '../mixins/pseudo.scss' as *;
+
+.circle{
+    position: relative;
+    top: -318px;
+    left:-90px;
+    width: 510px;
+    height: 1018px;
+    background-color: #E844FF;
+    border-radius:255px;
+    &::after{
+        @include pseudo{
+            top:1137px;
+            left:1115px;
+            background-color: aliceblue;
+            border-radius: 255px;
+        }
+    
+    }
+}
+
+
+
+
