@@ -80,5 +80,71 @@
       align-self: flex-end;
       border-radius: 10px 10px 4px 10px;
     }
+
+    &--last{
+      margin-top: 20px;
+    }
+
+    
+    &--cost{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 160px;
+      background-image: var(--gradient);
+      .mobile__info{
+        display: flex;
+        align-items: center;
+        gap:8px ;
+        .circle{
+          height: 12px;
+          width: 12px;
+          border: 1px solid #e572ff7d;
+          border-radius: 50%;
+  
+        }
+        .message{
+          color: white;
+
+        
+        }
+
+      }
+
+      .message--cost{
+        
+          font-size: 12px;
+          font-weight: 800;
+          color: white;
+        
+      }
+    }
+  }
+
+  &__send-message{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 213px;
+    height: 33.91px;
+    margin-inline: auto;
+    padding: 9px;
+    background-color: white;
+    border-radius: 166.95px;
+
+  }
+
+  &__text{
+    color: #c5c9cc;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  &__send{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
   }
 }
