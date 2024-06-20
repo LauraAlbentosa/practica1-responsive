@@ -1,4 +1,5 @@
 @use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
 
 .main {
   &::after,
@@ -8,13 +9,24 @@
       top: -509px;
       background-image: var(--gradient);
       border-radius: 15.9375rem;
+      overflow-x: hidden;
+
       z-index: -1;
     }
   }
 
   &::before {
     left: 157px;
-    top: 1455px;
+    top: 400px;
     opacity: 0.03;
+  }
+
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: 300px 600px;
+    justify-content: center;
+    &::before {
+      left: 1200px;
+    }
   }
 }
